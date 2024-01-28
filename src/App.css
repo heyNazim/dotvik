@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+/* Na-bAR Syling */
+.navlink{
+  text-decoration: none;
+  margin: 10px;
+  color: black;
+  font-size: large;
+  font-weight: 400;
+}
+.header{
+  border-bottom: 1.3px solid grey;
+}
+.navlink:hover{
+  color: #db1a2a;
+}
+/* card side */
+.aaa{
+  font-size: 18px;
+}
+.marqee{
+  background-color: black;
+  color: #ffff;
+  z-index: 0;
+  opacity: -1;
+}
+.megamenu{
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+  position: absolute;  
+  /* display: none !important; */
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100% !important;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-weight: 500;
+}
+.subflexdata{
+  color: #db1a2a;
+}
+.sss{
+  color: rgba(49, 40, 40, 0.832);
+  font-size: 13px;
+}
+.img{
+  height: 500px !important;
+}
+.mar{
+  margin-right: 800px;
+  font-size: 12.4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* MEGA MENU */
+
+/* .megamenu{
+  margin-top: 70px;
+} */
+
+/* Offer corner */
+#offercornerspinner{
+  height: 100px;
+  width: 100px;
+  color: black !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* FOR HER */
+.forherbox{
+  /* border-radius: 50%; */
+  border-radius: 50%;
+
+  background-color: #db1a2a;
+  padding: 20px;
+  height: 250px;
+  width: 250px;
+  
+}
+/* IN THE SPOTLIGHT */
+.inthespotlightimage{
+  height: 400px;
+  margin-bottom: 20px;
+}
+/* Process datta */
+.prodata{
+  font-size: 12px;
+}
+.ppp{
+  font-size: 51px;
+}
+/* Fooer syling */
+.footer{
+  background-color: #f6f6f6;
+}
+
+/* utilitycclasses */
+.headingborder{
+  border-bottom: 2px solid #db1a2a;
+}
+.headingbo{
+  border-bottom: 1.5px solid #db1a2a;
+}
+
+/* MEDIA QUERY MOBILE */
+@media only screen and (max-width: 600px) {
+  .prodata {
+    display: none;
+  }
+  .forhermain{
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .forherbox{
+    margin-bottom: 15px;
+  }
+  .inthespotlightimage{
+    height: 200px;
+    margin-bottom: 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* MEDIA QUERY TABLET */
+@media only screen and (max-width: 768px) {
+  .lefthead{
+    display: flex;
+    flex-direction: column !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .bbb{
+    display: none;
   }
 }
