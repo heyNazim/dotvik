@@ -16,6 +16,7 @@
 }
 .tplimg{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin: 10px;
 }
 .tplimg:hover{
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -99,10 +100,24 @@ position: fixed;
 
 /* FOR HER */
 .forherbox{
-  /* border-radius: 50%; */
   border-radius: 50%;
-
-  background-color: #db1a2a;
+  background-color: #ecdda2;
+  padding: 20px;
+  height: 250px;
+  width: 250px;
+  
+}
+.forhimbox{
+  border-radius: 50%;
+  background-color: #abdde0;
+  padding: 20px;
+  height: 250px;
+  width: 250px;
+  
+}
+.forkidsbox{
+  border-radius: 50%;
+  background-color: #ca5663;
   padding: 20px;
   height: 250px;
   width: 250px;
@@ -140,7 +155,21 @@ position: fixed;
     flex-direction: column !important;
     align-items: center;
   }
-  .forherbox{
+  .forhimmain{
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .forkidsmain{
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .forherbox {
+    margin-bottom: 15px;
+  }
+  .forhimbox {
+    margin-bottom: 15px;
+  }
+  .forkidsbox {
     margin-bottom: 15px;
   }
   .inthespotlightimage{
@@ -160,7 +189,9 @@ position: fixed;
     overflow: auto !important; /* Use "auto" instead of "scroll" for automatic scrolling */
     white-space: nowrap; /* Ensures that content does not wrap within the container */
   }
-
+.textshad{
+  text-align: center;
+}
   .subflexdata{
     margin-right: 10px;
     color: black;

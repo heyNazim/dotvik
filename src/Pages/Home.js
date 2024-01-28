@@ -8,6 +8,8 @@ import ForHer from '../compponens/ForHer'
 import V2KARTSPOTLIGHT from '../compponens/V2KART SPOTLIGHT'
 import INTHESPOTLIGHTS from '../compponens/INTHESPOTLIGHTS'
 import TopPicklisting from '../compponens/TopPicklisting'
+import ForHim from '../compponens/ForHim'
+import ForKids from '../compponens/ForKids'
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
     <TopPicklisting/>
     {/* <Offercorner/> */}
     <ForHer/>
+    <ForHim/>
+    <ForKids/>
     <V2KARTSPOTLIGHT/>
     <INTHESPOTLIGHTS/>
     <Process/>
