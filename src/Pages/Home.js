@@ -7,12 +7,14 @@ import Process from '../compponens/Process'
 import ForHer from '../compponens/ForHer'
 import V2KARTSPOTLIGHT from '../compponens/V2KART SPOTLIGHT'
 import INTHESPOTLIGHTS from '../compponens/INTHESPOTLIGHTS'
+import TopPicklisting from '../compponens/TopPicklisting'
 
 const Home = () => {
   return (
     <>
     <Header/>
     <Slider/>
+    <TopPicklisting/>
     {/* <Offercorner/> */}
     <ForHer/>
     <V2KARTSPOTLIGHT/>
