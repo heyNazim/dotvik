@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import { MdOutlineShoppingCart } from "react-icons/md";
+import { MdOpacity, MdOutlineShoppingCart } from "react-icons/md";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 import axios from 'axios'
+import { IoMdCloseCircleOutline } from "react-icons/io";
+
 import Megamenu from './Megamenu';
 
 
@@ -13,6 +15,7 @@ const Header = () => {
   const [getcategory, setGetcategory]=useState([])
   const [category, setCategory]=useState('men')
   const [show, setShow]=useState(false)
+  const [secondshow, setSecondshow]=useState(false)
 
 
   const getapi = async()=>{
@@ -36,8 +39,15 @@ const Header = () => {
   }
 
   const openmeganav=(x)=>{
+    document.getElementById('jjj').style.display='block';
+
     setCategory(x)
     setShow(true)
+  }
+
+
+  const displaynone=()=>{
+document.getElementById('jjj').style.display='none';
   }
 
   return (
@@ -63,15 +73,22 @@ const Header = () => {
       
     </div>
     <div className='righthead d-flex col-md-3 justify-content-end'>
+
       <div className='me-3 aaa'><FaRegUser/>Login</div>
       <div className='me-3 aaa'><IoMdHeartEmpty /><span className='spa'>0</span></div>
       <div className='me-3 aaa'><MdOutlineShoppingCart /><span className='spa'>0</span></div>
+      <IoMdCloseCircleOutline className='jjj' style={{fontSize:"30px", cursor:"pointer", zIndex:'2'}} onClick={()=>!displaynone()} />
+
     </div>
 </div>
     </div>
 
     {/* Mega menu */}
-    <Megamenu prodata={getcategory} showdata={show}/>
+    <div id='jjj'>
+
+    <Megamenu  prodata={getcategory} showdata={show}/>
+    </div>
+
     {
 // eslint-disable-next-line
 <div className='marquee'>

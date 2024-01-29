@@ -37,7 +37,7 @@ const Megamenu = (props) => {
           </div>
         </div>
       ))}
-              <IoMdCloseCircleOutline style={{fontSize:"30px", cursor:"pointer"}} onClick={()=>!setShow()}  />
+              <IoMdCloseCircleOutline className="clo" style={{fontSize:"30px", cursor:"pointer"}} onClick={()=>!setShow()}  />
 
     </div> : null
     }

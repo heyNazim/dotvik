@@ -150,16 +150,30 @@ position: fixed;
 
 /* MEDIA QUERY MOBILE */
 @media only screen and (max-width: 600px) {
+  .img{
+    height: 300px !important;
+  }
 
+  .inthespotlightimage{
+    height: 200px;
+    margin-bottom: 15px;
+  }
+}
+
+/* MEDIA QUERY TABLET */
+@media only screen and (max-width: 768px) {
   .forhermain{
     flex-direction: column !important;
     align-items: center;
+    flex-wrap: wrap;
   }
   .forhimmain{
     flex-direction: column !important;
     align-items: center;
+    flex-wrap: wrap;
   }
   .forkidsmain{
+    flex-wrap: wrap;
     flex-direction: column !important;
     align-items: center;
   }
@@ -172,14 +186,6 @@ position: fixed;
   .forkidsbox {
     margin-bottom: 15px;
   }
-  .inthespotlightimage{
-    height: 200px;
-    margin-bottom: 15px;
-  }
-}
-
-/* MEDIA QUERY TABLET */
-@media only screen and (max-width: 768px) {
   .lefthead{
     display: flex;
     flex-direction: column !important;
@@ -198,6 +204,9 @@ position: fixed;
     display: flex;
     font-size: 12px;
     flex-direction: column;
+  }
+  .jjj{
+    opacity: 23;
   }
   
   .sss{
@@ -224,5 +233,8 @@ position: fixed;
   }
   .catimg{
     display: none !important;
+  }
+  .clo{
+    display: none;
   }
 }
